@@ -50,9 +50,9 @@ class Mondula_Form_Wizard_Wizard {
     public static function fw_get_option($option, $section, $default = '') {
       $options = get_option($section);
       if ( isset( $options[$option] ) )
-		    return $options[$option];
-	    else
-		    return $default;
+            return $options[$option];
+        else
+            return $default;
     }
 
     private function render_progress_bar () {
@@ -255,7 +255,7 @@ class Mondula_Form_Wizard_Wizard {
     }
 
     private function render_body_html( $data, $name, $email ){
-                                            $available_keys = ['email_address', 'post_code', 'name', 'business_name', 'phone_number'];
+                                            $available_keys = ['name', 'phone_number', 'post_code', 'business_name', 'email_address'];
                                             $available_keys_ind = [];
                                             $next_ind = 0;
                                             foreach ($available_keys as $value) {
@@ -264,29 +264,23 @@ class Mondula_Form_Wizard_Wizard {
                                             }
 
                                             $email_html = [];
-                                            foreach ( $data as $key => $value ) {
+                                            foreach ( $data as $value ) {
                                                 
 
-                                                if (in_array($value->name, $available_keys)) {
+                                                if (in_array($value['name'], $available_keys)) {
 
-                                                    $email_html[$available_keys_ind[$value->name]] = 
-                                                        '<tr>
-                                                            <td align="left" style="padding: 30px 0 10px 0; font-size: 20px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">
-                                                                <strong>' . $value->name . '</strong> 
-                                                            </td>
-                                                            <td align="left" style="border:solid 1px #dadada; border-width:0 0 1px 0; padding: 10px 0 10px 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">'. $value->value .'
-                                                            </td>
-                                                        </tr>';
+                                                    $email_html[$available_keys_ind[$value['name']]] = $value['name'] . ': ' . $value['value'] . '<br />';
                                                 } else {
-                                                    $email_html[$next_ind] = '<tr>
-                                                                <td align="left" style="border:solid 1px #dadada; border-width:0 0 1px 0; padding: 10px 0 10px 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">'. $value->value .'
-                                                                </td>
-                                                            </tr>';
+                                                    $email_html[$next_ind] = $value['value'] . '<br />';
                                                     $next_ind ++;
                                                 }
+                                            } 
 
-                                                echo implode('', $email_html);
-                                            } ?>
+                                            for ($i=0; $i<count($email_html); $i++) {
+                                                echo $email_html[$i];
+                                            }
+                                            
+                                          ?>
                                           </tbody></table>
                                       </td>
                                   </tr>
@@ -301,7 +295,31 @@ class Mondula_Form_Wizard_Wizard {
     }
 
     private function render_body ( $data, $name, $email ) {
-        foreach ( $data as $key => $value ) {
+
+        $available_keys = ['name', 'phone_number', 'post_code', 'business_name', 'email_address'];
+        $available_keys_ind = [];
+        $next_ind = 0;
+        foreach ($available_keys as $value) {
+            $available_keys_ind[$value] = $next_ind;
+            $next_ind++;
+        }
+
+        $email_html = [];
+        foreach ( $data as $value ) {
+            
+            if (in_array($value['name'], $available_keys)) {
+                $email_html[$available_keys_ind[$value['name']]] = $value['name'] . ': ' . $value['value'] . '<br />';
+            } else {
+                $email_html[$next_ind] = $value['value'] . '<br />';
+                $next_ind ++;
+            }
+        } 
+
+        for ($i=0; $i<count($email_html); $i++) {
+            echo $email_html[$i];
+        }
+
+        /*foreach ( $data as $key => $value ) {
             echo PHP_EOL .  $key . PHP_EOL . PHP_EOL;
             foreach ( $value as $value2 ) {
                 foreach ( $value2 as $key2 => $value3 ) {
@@ -312,7 +330,7 @@ class Mondula_Form_Wizard_Wizard {
         }
 
         echo PHP_EOL . "Name: " . $name . PHP_EOL;
-        echo "Email: " . $email . PHP_EOL;
+        echo "Email: " . $email . PHP_EOL;*/
     }
 
     private function render_footer () {
