@@ -190,26 +190,28 @@ class Mondula_Form_Wizard_Wizard {
                     </div>
                 </div>
                 <div class="fw-wizard-step-container">
-                    <div class="fw-container">
-                    <?php
-                        for ($i = 0; $i < $len; $i++) {
-                            $step = $this->_steps[$i];
-                            ?>
-                            <div class="fw-wizard-step" data-stepId="<?php echo $i; ?>">
-                                <?php
-                                    $step->render( $wizardId, $i );
-                                    if ($i == $len - 1) {
-                                      ?>
-                                      <button type="button" class="fw-btn-submit btn-success hide">Submit</button>
+                    <form id="fw-wrap">
+                        <div class="fw-container">
+                        <?php
+                            for ($i = 0; $i < $len; $i++) {
+                                $step = $this->_steps[$i];
+                                ?>
+                                <div class="fw-wizard-step" data-stepId="<?php echo $i; ?>">
                                     <?php
-                                    }
-                                    ?>
-                                <div class="fw-clearfix"></div>
-                            </div>
-                            <?php
-                        }
-                    ?>
-                    </div>
+                                        $step->render( $wizardId, $i );
+                                        if ($i == $len - 1) {
+                                          ?>
+                                          <button type="button" class="fw-btn-submit btn-success hide">Submit</button>
+                                        <?php
+                                        }
+                                        ?>
+                                    <div class="fw-clearfix"></div>
+                                </div>
+                                <?php
+                            }
+                        ?>
+                        </div>
+                    </form>
                 </div>
                 <?php if (count($this->_steps) > 1) { ?>
                 <div class="fw-wizard-button-container">
@@ -253,14 +255,38 @@ class Mondula_Form_Wizard_Wizard {
     }
 
     private function render_body_html( $data, $name, $email ){
-                                              foreach ( $data as $key => $value ) {
-                                                  echo '<tr><td align="left" style="padding: 30px 0 10px 0; font-size: 20px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy"><strong>' . $key . '</strong> </td></tr>';
-                                                  foreach ( $value as $value2 ) {
-                                                      foreach ( $value2 as $key2 => $value3 ) {
-                                                          echo '<tr><td align="left" style="border:solid 1px #dadada; border-width:0 0 1px 0; padding: 10px 0 10px 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">'. $key2 .'</td><td align="left" style=" border:solid 1px #dadada; border-width:0 0 1px 0; 10px 0 10px 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">'. $value3 .'</td></tr>';
-                                                      }
-                                                  }
-                                              } ?>
+                                            $available_keys = ['email_address', 'post_code', 'name', 'business_name', 'phone_number'];
+                                            $available_keys_ind = [];
+                                            $next_ind = 0;
+                                            foreach ($available_keys as $value) {
+                                                $available_keys_ind[$value] = $next_ind;
+                                                $next_ind++;
+                                            }
+
+                                            $email_html = [];
+                                            foreach ( $data as $key => $value ) {
+                                                
+
+                                                if (in_array($value->name, $available_keys)) {
+
+                                                    $email_html[$available_keys_ind[$value->name]] = 
+                                                        '<tr>
+                                                            <td align="left" style="padding: 30px 0 10px 0; font-size: 20px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">
+                                                                <strong>' . $value->name . '</strong> 
+                                                            </td>
+                                                            <td align="left" style="border:solid 1px #dadada; border-width:0 0 1px 0; padding: 10px 0 10px 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">'. $value->value .'
+                                                            </td>
+                                                        </tr>';
+                                                } else {
+                                                    $email_html[$next_ind] = '<tr>
+                                                                <td align="left" style="border:solid 1px #dadada; border-width:0 0 1px 0; padding: 10px 0 10px 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">'. $value->value .'
+                                                                </td>
+                                                            </tr>';
+                                                    $next_ind ++;
+                                                }
+
+                                                echo implode('', $email_html);
+                                            } ?>
                                           </tbody></table>
                                       </td>
                                   </tr>

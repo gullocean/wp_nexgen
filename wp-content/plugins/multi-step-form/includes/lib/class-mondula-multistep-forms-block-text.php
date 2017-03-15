@@ -27,7 +27,7 @@ class Mondula_Form_Wizard_Block_Text extends Mondula_Form_Wizard_Block {
     public function render( $ids ) {
         ?>
     <div class="fw-input-container">
-        <h3><?php echo $this->_label ?></h3><input type="text" class="fw-text-input" data-id="text" name="<?php echo strtolower(preg_replace("/[^A-Za-z?!]/",'',$this->_label)); ?>"><span class="fa fa-pencil form-control-feedback" aria-hidden="true"></span>
+        <h3><?php echo $this->_label ?></h3><input type="text" class="fw-text-input" data-id="text" name="<?php echo strtolower(preg_replace("/[^A-Za-z?!]/",'_',$this->_label)); ?>"><span class="fa fa-pencil form-control-feedback" aria-hidden="true"></span>
     </div>
     <div class="fw-clearfix"></div>
         <?php
