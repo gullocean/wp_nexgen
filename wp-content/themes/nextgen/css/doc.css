@@ -1,0 +1,1088 @@
+/*font-family: 'Ubuntu Condensed', sans-serif;;*/
+
+body{font: 400 14px/20px 'Ubuntu Condensed', sans-serif; color: #333;}
+body a{text-decoration: none; outline: none;color: #e31e25;}
+
+.container{max-width:1000px;}
+
+.top_header{width: 100%; background: #E5E5E5;}
+.top_header_innr{width: auto;float: right;padding: 10px 0 10px;}
+.top_header_innr ul{margin: 0; padding: 0;}
+.top_header_innr ul li{list-style: none; float: left; padding:0 0px 0 5px; }
+.top_header_innr ul li a{border-right: 2px solid #e31e25;
+    color: #e31e25;
+    display: inline-block;
+    font: 13px/10px "Ubuntu",sans-serif;
+    outline: medium none;
+    padding-right: 4px;
+    text-decoration: none;}
+.top_header_innr ul li:nth-child(2) a{}
+.top_header_innr ul li:last-child a{border: none;}
+.top_header_innr ul li:nth-child(6) a{border: none;}
+.serch_box{width: 145px; background: #ffffff;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;display: inline-block;}
+.serch_box input[type="text"]{width: 80%; height:24px; float: left;height: 21px;padding: 0 3px;font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 13px; color: #828282;border: none; background: none;   }
+.serch_box input[type="submit"]{width: 20%; height:24px; float: right;background: url(../images/search.png)no-repeat center center; cursor: pointer;outline: none; border: none;}
+.top_header_innr ul li span a{background:#7C7B7B; text-decoration: none;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px; font: normal 14px/15px 'Open Sans', sans-serif; color: #fff;display: inline-block;padding:4px 8px; text-transform: uppercase;border: none !important;}
+
+.second_header{width: 100%; padding: 20px 0;}
+.logo{width: 100%;}
+.logo img{max-width: 100%; display: inline-block;}
+
+.contact{width: 100%;text-align: right;}
+.contact ul{width: auto;display: inline-block; margin: 0 ;padding: 0;}
+.contact ul li{list-style: none;display: block;background: url(../images/ph.jpg)no-repeat left 5px; padding-left: 37px; font: 500 33px/41px 'Ubuntu Condensed', sans-serif; color: #828282; 
+text-transform: uppercase;}
+.contact ul li a,
+.contact ul li a:hover{color: #828282; text-decoration: none;}
+.contact ul li span,
+.contact ul li a span{color: #e31e25;}
+
+.main_menu{width: 100%;padding: 20px 0 0;}
+.menu{border: none; outline: none; background: #f7f7f7 ;  } 
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background: #f7f7f7 !important;}
+.navbar-default .navbar-nav > li > a{font: 500 15px/20px 'Ubuntu', sans-serif !important;outline:none; color: #222;text-transform: uppercase; padding: 15px 14px !important;}
+.navbar-default .navbar-nav > li:hover > a{background: #f7f7f7 !important; color: #df1b29;}
+.navbar-default .navbar-nav > li.current_page_item > a,
+.navbar-default .navbar-nav > li.current-menu-ancestor > a{background: #f7f7f7 !important; color: #df1b29;}
+
+.navbar-default .navbar-nav > li{position: relative;}
+.navbar{margin-bottom: 0px !important;}
+.sub-menu{width: 100%; position: absolute; top: 100%;left: 0; z-index: 999;display: none; background: #f7f7f7; padding: 0;}
+.navbar-default .navbar-nav > li:hover ul.sub-menu{display: block !important; }
+.sub-menu li{list-style: none;display: block;}
+.sub-menu li a{text-decoration: none;font: 400 13px/20px 'Ubuntu', sans-serif !important;color: #222;padding: 8px 0 8px 10px !important;display: block;}
+.sub-menu li a:hover{background:#f7f7f7 !important; color: #df1b29;} 
+.sub-menu li.current_page_item a{background:#f7f7f7 !important; color: #df1b29;} 
+
+
+.body_top{width: 100%;background: url(../images/bg.jpg)repeat 0 0 ;margin: 0 0 50px;}
+.page-template-tpl_phonesystem .body_top,
+.page-template-tpl_large_business .body_top{margin: 0 0 10px;}
+.body_top .body_top_form {
+	height: 287px;
+	background: url('../images/header-banner-right-bg.jpg') no-repeat center center;
+}
+
+.body_top .body_top_form a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 23px 32px;
+}
+
+.body_top .body_top_form .button_container {
+	width: 100%;
+	height: 100%;
+	background: #e31e27;
+	border-radius: 2px;
+	display: block;
+}
+
+.body_top .body_top_form .button_container strong {
+	width: 70%;
+	font: 400 24px/32px 'Ubuntu', sans-serif;
+	color: #fefefc;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 0 auto;
+	padding: 30px 0;
+	display: block;
+}
+
+.body_top .body_top_form .button_container .form_button {
+	width: 60%;
+	background: #fefefc;
+	border-radius: 2px;
+	font: 400 28px/32px 'Ubuntu', sans-serif;
+	color: #e31e27;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.body_top .body_top_form a:hover,
+.body_top .body_top_form a:active,
+.body_top .body_top_form a:focus,
+.body_top .body_top_form a:hover .button_container strong,
+.body_top .body_top_form a:hover .button_container .form_button {
+	border: 0 !important;
+	text-decoration: none !important;
+}
+
+.top_slider{width: 100%;}
+.top_slider .carousel-indicators{display: none;}
+.top_slider .carousel-control{display: none;}
+.top_slider .carousel-inner img{width: 100%; display: block; min-height: 280px;}
+.right_frm{width: 100%;padding:7px 21px 2px 10px;background: #5d5d5d;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;text-align: center;display: inline-block; }
+.right_frm h3{font: 600 25px/30px 'Ubuntu Condensed', sans-serif; color: #fff; background: url(../images/wtch.jpg)no-repeat 14% 3px;margin: 0; padding: 0 0 8px; font-weight: normal;}
+.right_frm_in{width: 100%;display: inline-block;margin-bottom: 7px;}
+.right_frm_in label{font: 400 12px/15px 'Ubuntu', sans-serif; color: #fff; display: block;width: 25%;float: left; text-align: left;}
+.right_frm_in input[type="text"]{width: 75%; float: right;text-align:left; background: #fff;height: 20px; font-size: 13px; font-family:'Ubuntu Condensed', sans-serif; color: #828282;padding: 0 5px;
+border: none;outline: none; }
+.right_frm_in textarea{width: 75%; float: right; background: #fff;height: 44px; font-size: 12px;text-align:left; font-family:'Ubuntu Condensed', sans-serif; color: #828282;padding: 0 5px;border: none;outline: none;margin-bottom: 10px; }
+.right_frm_in input[type="submit"]{font: 600 20px/29px 'Ubuntu Condensed', sans-serif; color: #fff;cursor: pointer;border: none;outline: none;text-transform: uppercase;background:none;text-align:left;width: 60%;float: left;padding: 0; font-weight: normal;}
+.right_frm_in input[type="email"]{width: 75%; float: right;text-align:left; background: #fff;height: 20px; font-size: 13px; font-family:'Ubuntu Condensed', sans-serif; color: #828282;padding: 0 5px;border: none;outline: none; }
+
+.australias_prt{width: 100%; text-align: center;}
+.australias_prt h2{font: 400 34px/36px 'Ubuntu Condensed', sans-serif;color: #e31e25;margin: 0; padding: 0; text-transform: uppercase; }
+.australias_prt h6{font: 400 15px/17px 'Ubuntu Condensed', sans-serif;color: #828282;margin: 0; padding: 0 0 135px; text-transform: uppercase; }
+
+.round_icon{width: 100%; background: #f7f7f7;padding-bottom: 17px;}
+.round_icon_bx{width: 100%;text-align: center;margin-top: -98px;}
+.round_icon_bx img{max-width: 100%; display: inline-block; }
+.round_icon_bx a{text-decoration: none; font: 500 18px/22px 'Ubuntu', sans-serif; color: #5d5d5d; outline: none; background: url(../images/arr.png)no-repeat right center; display: inline-block; padding: 6px 24px 6px 0;}
+.round_icon_bx:hover a{ color:#E31E25; background: url(../images/arr_hover.png)no-repeat right center;}
+
+.effective_prt{width: 100%;padding: 20px 0 0;text-align: center;}
+.effective_prt h2{font: 400 25px/18px 'Ubuntu Condensed', sans-serif;color: #e31e25;background:url(../images/line4.jpg)no-repeat center left / 100% auto;margin: 0; padding: 23px 0 29px 0;text-transform: capitalize;}
+.effective_prt h2 span{background: #fff;padding: 0 12px; }
+.effective_prt_para{width: 100%;}
+.effective_prt_para p{font:400 13px/22px 'Ubuntu', sans-serif; color: #828282;margin: 0; padding: 0 0 15px;text-align: left;}
+.effective_prt_para p a{text-decoration: none; color: #e31e25;display: inline-block;}
+.effective_prt_vid{width: 100%;margin-bottom: 0;}
+
+.round_icon_bx2{width: 100%;text-align: center;margin-top: -150px;}
+.round_icon_bx2 img{max-width: 100%; display: inline-block;  }
+.round_icon_bx2 a{text-decoration: none; font: 500 21px/25px 'Ubuntu', sans-serif;color: #e31e25;display: inline-block;outline: none; background: url(../images/arr.png)no-repeat right center;padding:5px 29px 5px 0; }
+.round_icon_bx2 h4{font:400 18px/20px "Ubuntu",sans-serif; color: #5d5d5d; margin: 0; padding: 5px;display: block;}
+.round_icon_bx2 h4 span{font-weight: bold;}
+
+
+.we_partner{width: 100%;text-align: center; padding: 30px 0 2px;}
+.we_partner h2{font: 400 25px/18px 'Ubuntu Condensed', sans-serif;color: #e31e25;background:url(../images/line4.jpg)no-repeat center left / 100% auto;margin: 0; padding: 23px 0 30px 0;text-transform: capitalize;}
+.we_partner h2 span{background: #fff;padding: 0 12px; }
+.comp_logo{width: 100%;background: #f7f7f7; padding: 10px 0;margin: 7px 0; }
+.comp_logo ul{margin: 0; padding: 0;}
+.comp_logo ul li{list-style: none; display: inline-block; margin:0 15px;}
+.effective_prt_vid2{width: 100%;}
+
+.our_clients{width: 100%; text-align: center; padding: 0 0 40px;}
+.our_clients h2{font: 400 25px/18px 'Ubuntu Condensed', sans-serif;color: #e31e25;background:url(../images/line4.jpg)no-repeat center left / 100% auto;margin: 0; padding: 21px 0 29px 0;text-transform: capitalize;}
+.our_clients h2 span{background: #fff;padding: 0 12px; }
+.comp_logo2{width: 100%; padding: 6px 0;margin-bottom: 6px; }
+.comp_logo2 ul{margin: 0; padding: 0;}
+.comp_logo2 ul li{list-style: none; display: inline-block; margin: 0 25px;}
+.our_clients h3{font: 400 23px/25px 'Ubuntu', sans-serif; color: #e31e25;margin: 0; padding:0 0 27px 0;}
+.our_clients p{font:400 13px/22px 'Ubuntu', sans-serif; color: #828282;margin: 0; padding:0 0 18px 0;}
+.our_clients p a{text-decoration: none; color: #e31e25;display: inline-block;}
+.our_clients_btn{width: 100%; text-align: center; margin-top: 20px;}
+.our_clients_btn a{text-decoration: none; font: 500 21px/48px 'Ubuntu', sans-serif;color: #fff; display: inline-block; background: #e31e25 url(../images/arr23.png)no-repeat 97% center;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;padding: 0 32px 0 20px; }
+
+.our_clients_btn a:hover{background-color: #6c6c6c;}
+
+.testim{width: 100%;} 
+.testim h4{ font: 400 16px/20px 'Ubuntu', sans-serif;color: #5d5d5d;margin: 0; padding: 0 0 17px 0;}
+.news{width: 80%;}
+.news input[type="text"]{width: 83%; float: left; background: #fff;border: none; outline: none;height:25px;}
+.news input[type="submit"]{width: 15%; float: right; background:url(../images/news.png)no-repeat center center /100% 100% ; height:25px; cursor: pointer;border: none; outline: none; }
+.service_body_innr p a:hover{ color:#828282;}
+a .rolloverlayer{background: transparent url("../images/zoom-view1.png") no-repeat scroll center center;}
+.rolloverlayer{ display: block;
+    font-size: 0;
+    left: 0;
+    line-height: 0;
+    position: absolute;}
+
+
+.ftr{background: #f7f7f7; border-top: 13px solid #e31e25; padding: 25px 0;}
+
+.ftr_link_sec{ display: inline-block; width: 100%;}
+.ftr_link_sec h4{ font-size: 15px; font-weight: normal; margin: 0px 0 15px 0; font-weight: 400; font-family: 'Ubuntu', sans-serif;}
+.ftr_link_sec ul{list-style: none; margin: 0px; width:auto; margin:0 20px 0 0; padding: 00px; float: left; width: auto;}
+.ftr_link_sec ul li{width: 100%; margin-bottom: 6px;}
+.ftr_link_sec ul li a{font-size: 12px; color: #e31e25; font-family: 'Ubuntu', sans-serif; text-decoration: none !important;}
+.ftr_link_sec ul:last-child{margin-right: 0px;}
+.ftr_link_sec ul li p{font-size: 12px; color: #5d5d5d; font-family: 'Ubuntu', sans-serif;}
+.ftr_link_sec ul li span{ font-weight: bold;}
+
+.ftr_link_sec ul.sm{margin: 0px; padding: 0px; width: 100%; margin-left: 0px;}
+.ftr_link_sec ul.sm li{margin-right: 5px; display: inline-block; width: auto;}
+
+.ftr_bottom{border-top: 1px solid #d2d2d2; padding: 15px 0 0;}
+.ftr_bottom p{color: #5d5d5d; font-size: 12px; margin: 0px;font-family: 'Ubuntu', sans-serif;}
+.ftr_bottom p a{color: #5d5d5d; font-size: 12px; margin: 0px; font-family: 'Ubuntu', sans-serif; text-decoration: none !important;}
+.nw_div{width: auto;display: inline-block; margin-left: 20px;}
+.marquee0 div {width: 100% !important; height: 80px;}
+.marquee0 img { margin: 0 19px 0 0!important; width: 120px;}
+
+.top_slider .carousel-inner > .item{min-height: 280px !important;}
+.inner_body {width: 100%;}
+.inner_body h2{font: 400 34px/46px 'Ubuntu Condensed', sans-serif;color: #e31e25;margin: 0; padding: 0 30px 20px; } 
+
+.service_body{width: 100%;}
+.service_body_innr{width: 100%;padding-bottom: 67px;}
+.brd_camp{width: 100%;background: url(../images/line6.png)no-repeat left bottom /100% auto;margin-bottom: 15px;
+    padding: 0 0 6px;} 
+.brd_camp ul{margin: 0; padding: 0 0 10px 0; }
+.brd_camp ul li{list-style: none; display: inline-block;font:400 20px/35px 'Ubuntu', sans-serif;color: #e31e25;}
+.brd_camp ul li a{text-decoration: none; font:400 15px/35px 'Ubuntu', sans-serif !important;color: #828282;display: inline-block; }
+.service_body_innr h2{font:600 22px/28px 'Ubuntu', sans-serif;color: #e31e25;margin: 0; padding: 20px 0 15px; font-weight: 400; text-transform: uppercase;}
+.service_body_innr h3{font:600 18px/24px 'Ubuntu', sans-serif;color: #e31e25;margin: 0; padding: 15px 0; font-weight: 400;}
+.service_body_innr p{font:400 13px/22px 'Ubuntu', sans-serif;color: #828282;margin: 0; padding: 0 0 15px;}
+.service_body_innr p a{text-decoration: none;color: #e31e25;}
+
+.service_body_innr .round_icon_bx2{margin: 0 0 25px 0;}
+.service_body_innr .round_icon_bx2 h4{font: 400 15px/20px 'Ubuntu', sans-serif; padding: 5px; color: #828282; margin: 0 auto; max-width: 170px;}
+.service_body_innr .round_icon_bx2 a { background: rgba(0, 0, 0, 0) url("../images/arr.png") no-repeat scroll right center;}
+
+.service_body_innr .round_icon_bx2 .icon_acn a{ background: #5D5D5D url("../images/arr3.png") no-repeat scroll 95% center;margin:5px 0;border-radius: 4px;
+color: #fff; display: inline-block;  font: 500 17px/40px 'Ubuntu ', sans-serif; padding: 0 32px 0 20px !important;text-decoration: none;}
+
+
+.red_anc{width: 100%; background: url(../images/line6.png)no-repeat center left /100% auto ;text-align: center;padding: 30px 0;}
+.red_anc a {
+    background: #e31e25 url("../images/arr23.png") no-repeat scroll 97% center;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font: 500 20px/48px 'Ubuntu', sans-serif;
+    padding: 0 32px 0 20px;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+.red_anc2{width: auto; background: #fff;display: inline-block;}
+.service_body_innr h4{font:400 18px/28px 'Ubuntu', sans-serif; color: #e31e25;margin: 0; padding: 15px 0; }
+.make_the_switch_main{width: 100%; padding: 6px;background: #fff;border: 3px solid #e31e25;border-radius:7px;display: inline-block; margin-bottom: 30px; margin-top: 15px;}
+.make_the_switch{width: 100%;text-align: center; background: url(../images/ftr_btn.jpg)no-repeat center center/ 100% 100%; display: inline-block;padding: 0 0 5px;} 
+.make_the_switch h2{font: 400 25px/30px 'Ubuntu', sans-serif;color: #fff; margin: 0; padding: 10px 0 30px;}
+
+.ready_left{width: 100%;text-align: center;}
+.ready_left h3{font: 400 22px/30px 'Ubuntu', sans-serif;color: #e31e25; margin: 0; padding: 0 0 3px;}
+.ready_left a{ background: #e31e25 url("../images/arr23.png") no-repeat scroll 97% center;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font: 500 20px/48px 'Ubuntu', sans-serif;
+    padding: 0 32px 0 20px;
+    text-decoration: none;
+    margin: 10px 20px;
+    width: 325px;}
+.service_body_innr2 .round_icon_bx2{margin: 0 0 15px 0;}
+.service_body_innr2 .round_icon_bx2 h4{font: 400 16px/20px 'Ubuntu', sans-serif;margin: 0;  padding: 5px; color: #5D5D5D;}
+.service_body_innr2 .round_icon_bx2:hover h4{ color:#E31E25;}
+.service_body_innr2 .round_icon_bx2 a { background: rgba(0, 0, 0, 0) url("../images/arr4.png") no-repeat scroll right center; font-weight: bold; font-size: 19px; padding: 0px 19px 0 0;}
+.service_body_innr2 .round_icon_bx2 .icon_acn a{ background: #5D5D5D url("../images/arr3.png") no-repeat scroll 95% center;margin:5px 0;border-radius: 4px;color: #fff; display: inline-block;  font: 700 17px/40px 'Ubuntu Condensed', sans-serif; padding: 0 32px 0 20px;text-decoration: none;}
+.round_icon_bx2 h5{font-size:400 17px/20px  'Ubuntu Condensed', sans-serif;color: #e31e25;margin: 0; padding:0 0 10px; }
+
+
+.loyer_cost{width: 100%;padding:20px 0 10px;}
+.loyer_cost ul{margin: 0; padding: 0 0 0 20px;}
+.loyer_cost ul li{display: block; list-style-type:disc; font:400 13px/20px 'Ubuntu', sans-serif !important; color: #828282 !important;padding-left: 15px;margin: 5px 0;  background: rgba(0, 0, 0, 0) url("../images/blt.png") no-repeat scroll left 9px; }
+.loyer_cost ul li span{font-weight: 600;display: block;background: url(../images/blt.png)no-repeat left center;padding-left: 10px;}
+.pageheadsec{ display:  inline-block; width: 100%; text-align: center;}
+.pageheadsec span{ color: #e31e25;
+    display: inline-block;
+    font: 500 16px/30px 'Ubuntu Condensed', sans-serif; }
+
+/*contact	*/
+
+.contact_main_frm{width: 50%;padding: 30px 0;}
+.contact_main_frm h3{font:600 22px/28px 'Ubuntu Condensed', sans-serif;color: #e31e25;margin: 0; padding:0 0 25px 0; }
+.contact_main_frm label{width: 35%; float: left;font:400 13px/16px 'Ubuntu', sans-serif;color: #828282;}
+.contact_main_frm input[type="text"]{width: 65%; float: right;height: 20px; border: 1px solid #666666;padding: 0 10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm input[type="email"]{width: 65%; float: right;height: 20px; border: 1px solid #666666;padding: 0 10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm input[type="tel"]{width: 65%; float: right;height: 20px; border: 1px solid #666666;padding: 0 10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm_in{width: 100%;margin-bottom: 8px;display: inline-block;}
+.contact_main_frm select{width: 65%; float: left;height: 20px; border: 1px solid #666666;padding: 0 10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm input[type="checkbox"]{width: 5%; float:left;margin-right:8px; border: 1px solid #000;padding: 0 10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.chekbx{width: 65%; float:right;}
+.chekbx_in{width: 100%;float: left;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm textarea{width: 65%; float:right; height: 88px;border: 1px solid #666666;padding:10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282; }
+.contact_main_frm input[type="submit"]{ background: #e31e25 url("../images/arr23.png") no-repeat scroll 90% center;border-radius: 4px;color: #fff;display: inline-block; font: 500 20px/48px 'Ubuntu', sans-serif; padding: 0 32px 0 20px;text-decoration: none;border: none; outline: none; }
+.map_prt{width: 100%;padding: 30px 0 0;}
+.map_prt ul{margin: 0; padding: 0;}
+.map_prt ul li{list-style: none; display: block;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282; }
+.map_prt ul li span{font-weight: 600;}
+.map_prt ul li a{text-decoration: none; color:#e31e25;font-weight: 600;}
+.map{width: 100%; height: 173px;margin: 10px 0;} 
+.navbar-default .navbar-toggle .icon-bar { background-color: #fff !important;}
+
+
+.execphpwidget{display: inline;}
+h4.entry-title{list-style: none; display: block;margin: 5px 0;background: url(../images/blt2.png)no-repeat left 6px;padding: 0 0 0 20px}
+h4.entry-title a{text-decoration: none;font: 400 14px/22px 'Ubuntu Condensed', sans-serif;color: #e31e25;display: inline-block;}
+h4.entry-title a:hover{color: #828282;}
+
+/*10.12.2015*/
+.mission{width: 100%;padding: 0 0 30px;}
+.mission h3{font: 700 18px/22px 'Ubuntu Condensed', sans-serif;color: #fff;padding: 8px 15px; background: #242424; display: block; margin-bottom: 12px;}
+.mission p{ color: #828282; font: 400 14px/22px 'Ubuntu Condensed', sans-serif;   margin: 0;   padding: 0 0 15px;color: #828282;}
+.mission_list{width: 100%;}
+.mission_list ul{margin: 0 ;padding: 0;}
+.mission_list ul li{list-style: none; display: block;margin: 5px 0;font: 400 14px/22px 'Ubuntu Condensed', sans-serif;color: #828282;background: url(../images/blt2.png)no-repeat left 6px;padding: 0 0 0 20px}
+
+.testimonials{width: 100%; padding-bottom: 30px; }
+.testimonials img{max-width: 100%; display:inline-block;margin-bottom: 20px;}
+
+.blog_lft{width: 100%;padding: 20px 0;}
+.blog_lft p{font:400 14px/22px 'Ubuntu', sans-serif;color: #828282;margin: 0; padding:0 0 8px;}
+.blog_lft ul{margin: 0;padding: 0 0 15px;}
+.blog_lft ul li{list-style: none; display: block;margin: 5px 0;background: url(../images/blt2.png)no-repeat left 9px;padding: 0 0 0 20px; color: #e31e25;}
+.blog_lft ul li a{text-decoration: none;font: 400 14px/22px 'Ubuntu', sans-serif;color: #e31e25;display: inline-block;}
+.blog_lft ul li a:hover{color: #828282;}
+
+.blog_dtl{width: 100%;}
+.blog_dtl h4 a{text-decoration: none; font:400 15px/20px 'Ubuntu Condensed', sans-serif;color: #e31e25; display:block; padding-bottom: 15px; margin: 0;outline: none;}
+.blog_in{width: 100%; padding: 15px 0 20px; border-bottom: 1px solid #000;margin-bottom: 20px;}
+.blog_in p{font:400 13px/22px 'Ubuntu', sans-serif; color: #828282; margin: 0; padding: 0 0 15px;}
+.blog_in p span{font-size: 12px; padding: 0 0 15px;}
+.blog_in p a{color: #e31e25;outline: none;text-decoration: none}
+.blog_in p a:hover{color: #828282;}
+.blog_img{width: 100%;padding: 15px 0;}
+.blog_img img{max-width: 100%;display: inline-block;}
+.innr_img{width: 100%;}
+.innr_img img{width: 220px;height: 80px;}
+.office_img{width: 100%; display: inline-block;}
+.office_bx{width: 30%; float: left;margin-right: 3%;margin-bottom: 5px;}
+.office_bx img{width: 100%; display: block; }
+.office_bx a{font:400 13px/18px 'Ubuntu Condensed', sans-serif;color: #e31e25;margin: 0; padding: 0 0 15px;text-decoration: none;outline: none;}
+.office_bx a:hover{color: #828282;}
+.office_img .contact_main_frm{width: 70%;}
+.contact_main_frm input[type="file"]{width: 65%; float: right;height: 30px; border: 1px solid #666666;padding:0;font:400 12px/22px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm span{font-size: 13px;}
+
+.from_price{width: 100%;display: inline-block;margin-bottom: 15px;}
+.from_price_bx{width: 25%; float: left;text-align: center;}
+.from_price_bx h2{font: 600 20px/25px 'Ubuntu Condensed', sans-serif;color: #fff;margin: 0; padding: 10px 0;background: #5D5D5D;display: block;border-left:1px solid #ffffff; border-right:1px solid #ffffff;}
+.color1{background: #F7F7F7 !important;}
+.from_price_bx_btm{width: 100%;background:#EAE9E9;  text-align: center; padding: 20px 0;}
+.from_price_bx_btm h3{font:700 18px/23px 'Ubuntu Condensed', sans-serif;color: #828282;margin: 0; padding:0 0 10px 0; }
+.from_price_bx_btm h4{font:700 18px/23px 'Ubuntu Condensed', sans-serif;color: #E31E25;margin: 0; padding:0 0 10px 0; }
+.from_price_bx_btm ul{margin: 0 0 0 20px; padding: 0 20px;text-align: left;}
+.from_price_bx_btm ul li{list-style:none;display: block;font:400 14px/22px 'Ubuntu Condensed', sans-serif;color: #828282;margin: 5px 0;padding: 0 0 0 15px;
+background: url(../images/tick.png)no-repeat left 7px; }
+.red_anc3 a {
+    background: #e31e25 url("../images/arr23.png") no-repeat scroll 97% center;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font: 700 16px/40px 'Ubuntu Condensed', sans-serif;
+    margin: 10px 20px;
+    padding: 0 24px 0 9px;
+    text-decoration: none;
+}
+.red_anc3 {
+   
+    display: inline-block;
+    width: auto;
+}
+.finance1{padding-left: 50px;}
+.service_body_innr h3 span{color: #828282;}
+.service_body_innr h5{font: 400 16px/22px 'Ubuntu Condensed', sans-serif;color: #E31E25;padding: 0px 0px 15px;margin: 10px 0 0 0; }
+.finance2{width: 100%; padding: 0 0 0 50px;}
+.finance2 ul{margin: 0 ;padding: 0;}
+.finance2 ul li{list-style: none; display: block;margin: 5px 0;font: 400 14px/22px 'Ubuntu Condensed', sans-serif;color: #828282;background: url(../images/blt2.png)no-repeat left 6px;padding: 0 0 0 20px !important;}
+.finance2 ul ul{width: 100%; margin: 0; padding: 0 0 0 50px;position: inherit; top:100%; left: 0;display: block;}
+.finance2 ul ul li{list-style:none; display: block; margin: 8px 0;position: relative;background: url(../images/blt2.png)no-repeat left 8px;padding: 0 0 0 15px !important;}
+.finance2 ul ul li a{text-decoration: none; font:400 13px/20px 'Ubuntu Condensed', sans-serif;color: #E31E25;display:inline-block;}
+
+.contact_main_frm span.wpcf7-not-valid-tip{color: #f00;
+    display: block;
+    float: right;
+    font-size: 12px; font-weight: bold; font-style: italic;
+    margin-top: 5px;
+    width: 100%;}
+.contact_main_frm div.wpcf7-validation-errors{ border: none; color: #f00; font-size: 12px; font-weight: bold; font-style: italic;}
+.contact_main_frm div.wpcf7-mail-sent-ok {
+    border: none; color: #398f14; font-size: 12px; font-weight: bold; font-style: italic;
+}
+#newsimages {
+    float: left;
+    padding: 0 20px 10px 10px;
+    width: 200px;
+}
+#newsimages span{color: #e31e25; font-size: 12px; padding-top: 10px; display: inline-block;}
+.blogpostbody h2{ color: #e31e25; font-size: 20px; margin: 0 0 10px 0;}
+
+#newsimages img{ width: 100%;}
+.right_frm span.wpcf7-not-valid-tip{color: #f00;
+    display: block;
+    float: right;
+    font-size: 12px; font-weight: bold; font-style: italic;
+    margin-top: 5px;
+    width: 100%;}
+.right_frm div.wpcf7-validation-errors{ border: none; color: #f00; font-size: 12px; font-weight: bold; font-style: italic;}
+.right_frm div.wpcf7-mail-sent-ok {
+    border: none; color: #398f14; font-size: 12px; font-weight: bold; font-style: italic;
+}
+.calculator{width: 100%; padding:40px 0 0 50px;}
+.calculator h4{font: 400 18px/22px 'Ubuntu', sans-serif;color: #E31E25;padding: 0px 0px 15px;margin: 0; }
+.calculator h5{font: 400 14px/22px 'Ubuntu', sans-serif;color: #828282;padding: 0px 0px 15px;margin: 0;text-transform: uppercase; }
+.calculator select{width: 200px;height: 25px; border: 1px solid #666666;padding: 0 10px;font:400 13px/22px 'Ubuntu', sans-serif;color: #828282;}
+.operating_lease{width: 66%;border: 1px solid #000;margin: 20px 0;text-align:center;} 
+.operating_lease_hdn{background: #000; font: 400 16px/20px 'Ubuntu', sans-serif;color: #fff;margin: 0; padding: 8px 15px;text-align: left;}
+.operating_lease input[type="text"]{width: 200px;height: 25px; border: 1px solid #666666;padding: 0 10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.cal_in{width: 100%;padding: 20px 0;}
+.cal_in select{width: 100px;height: 25px; border: 1px solid #666666;padding: 0 10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.cal_in input[type="submit"]{width: auto; display: inline-block; background: #F0F0F0;font:400 12px/22px 'Ubuntu Condensed', sans-serif;color: #828282;cursor: pointer;border: none;outline: none;padding: 5px 15px;}
+.cl_frm{width: 100%;margin:3px 0; display: inline-block;}
+.cal_in label{font:400 13px/22px 'Ubuntu', sans-serif;color: #828282; float: left; text-align: right; padding-right: 15px; width: 30%;}
+.cal_in input[type="submit"]{float: left; margin-left: 30%;}
+
+.cl_frm input[type="text"]{float: left;}
+.cl_frm select{float: left;}
+
+.prd_detl{width: 70%; float: left;}
+.prd_detl_rit{width: 30%; float: left; padding-left: 15px;}
+.service_body_innr .round_icon_bx2 .icon_acn4{width: 100%;display: inline-block;}
+.service_body_innr .round_icon_bx2 .icon_acn4 a {
+    background: #5d5d5d url("../images/arr5.png") no-repeat scroll 95% center;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font: 700 13px/40px 'Ubuntu', sans-serif;
+    margin: 5px 0;
+    padding: 0 0 0 15px;
+    text-decoration: none;text-align: left;width: 85%;}
+.service_body_innr .round_icon_bx2 .red_anc5{
+  
+    display: inline-block;
+    width:100% !important;
+    
+}
+.red_anc5 a {
+    background: #e31e25 url("../images/arr23.png") no-repeat scroll 97% center !important;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font: 700 17px/40px 'Ubuntu', sans-serif;
+    margin: 10px 0px;
+    padding: 0 0 0 15px ;
+    text-decoration: none;
+    text-align: left;
+    width: 85%;
+
+}
+.related{width: 100%; display: inline-block;text-align: left;}
+.related h2 {
+    background: rgba(0, 0, 0, 0) url("../images/line6.png") no-repeat scroll left center / 100% auto;
+    color: #e31e25;
+    font: 400 25px/18px 'Ubuntu Condensed', sans-serif;
+    margin: 0;
+    padding: 23px 0 29px;
+    text-transform: capitalize;
+    text-align: center;}
+.related h2 span {
+    background: #fff none repeat scroll 0 0;
+    padding: 0 12px;
+}
+.innr_img2{width: 60%;padding:0 0 10px 0}
+.innr_img2 img{width: 100%;display: block;}
+.speed_cost{width: 100%; padding: 20px 0;}
+.speed_cost ul{margin: 0; padding:0 0  20px 0;}
+.speed_cost ul li{display: inline-block; list-style: none; margin: 0 20px 0 0;}
+.speed_cost ul li a{text-decoration: none; outline: none;}
+.speed_cost ul li a img{width: 100px;}
+.finance3{width: 100%; padding: 0 0 0 50px;}
+.finance3 ul{margin: 0 ;padding: 0;}
+.finance3 ul li{list-style: none; display: block;margin: 5px 0;font: 400 14px/22px 'Ubuntu Condensed', sans-serif;color: #828282;background: url(../images/blt.png)no-repeat left 6px;padding: 0 0 0 20px}
+.innr_img3{width: 100%;display: inline-block;text-align: left;}
+.innr_img3 a{text-decoration: none;}
+.last_cn{width: 100%; display: inline-block;}
+
+.sitemap{width: 100%;padding: 20px 0;}
+.sitemap ul{margin: 0 ;padding:0;}
+.sitemap ul li{list-style:none; display: block; margin: 8px 0;position: relative;}
+.sitemap ul li a{text-decoration: none; font:600 18px/25px 'Ubuntu Condensed', sans-serif;color: #E31E25;display:inline-block;}
+.sitemap ul li a:hover{color: #828282;}	
+.sitemap ul ul{width: 100%; margin: 0; padding: 0 0 0 30px;position: inherit; top:100%; left: 0;display: block;}
+.sitemap ul ul li{list-style:none; display: block; margin: 8px 0;position: relative;background: url(../images/blt2.png)no-repeat left 8px;padding: 0 0 0 10px;}
+.sitemap ul ul li a{text-decoration: none; font:400 13px/20px 'Ubuntu Condensed', sans-serif;color: #E31E25;display:inline-block;}
+.innr_img3{width: 30%;padding:0 0 10px 0}
+.innr_img3 img{max-width: 100%;display: block;}
+.video{width: 70%; padding: 10px 0;}
+.service_body_innr h6 a{text-decoration:none; font: 600 14px/22px 'Ubuntu Condensed', sans-serif;color: #E31E25;margin: 0; padding: 0 0 15px;display: inline-block;} 
+.img_menu{width: 100%;}
+.img_menu ul{margin: 0; padding: 0;}
+.img_menu ul li{list-style: none ; display: inline-block;width: 150px;margin-right: 0 2px 0 0 ''}
+.img_menu ul li img{width: 100%;}
+.pad_r8{padding-left: 100px !important;padding-top: 15px !important;}
+
+.finance5{width: 100%; padding: 0 0 0 50px;}
+.finance5 ul{margin: 0 ;padding: 0;}
+.finance5 > ul > li{list-style: none; display: block;margin: 5px 0;font: 700 14px/22px 'Ubuntu Condensed', sans-serif;color: #828282;padding: 0 0 0 20px;background: none !important;}
+.finance5 ul ul{width: 100%; margin: 0; padding: 0 0 0 50px;position: inherit; top:100%; left: 0;display: block;}
+.finance5 ul ul li{list-style:none; display: block; margin: 8px 0;position: relative;padding: 0 0 0 15px;background: none !important;}
+.finance5 ul ul li a{text-decoration: none; font:400 13px/20px 'Ubuntu Condensed', sans-serif;color: #E31E25;display:inline-block;}
+.finance5 ul ul li span{font-weight: 700;}
+.finance5 ul ul ul li{background: url(../images/blt2.png)no-repeat left 8px !important;}
+
+.specer{width: 100%;height: 80px;}
+
+.finance6{width: 100%; padding: 0 0 0 0px;}
+.finance6 ul{margin: 0 ;padding: 0;}
+.finance6 ul li{list-style: none; display: block;margin: 5px 0;font: 400 14px/22px 'Ubuntu Condensed', sans-serif; color: #828282;padding: 0 0 0 20px;background: url(../images/blt.png)no-repeat left 8px !important;}
+
+
+.brd_camp > span > a{text-decoration: none; font:400 15px/35px 'Ubuntu Condensed', sans-serif !important;color: #828282;display: inline-block; }
+.brd_camp > span{font:400 15px/35px 'Ubuntu Condensed', sans-serif !important;color: #828282;}
+.enq{width: 100%;}
+.enq .contact_main_frm{width:100%;}
+.enq .contact_main_frm label{width: 19% !important;}
+.enq .contact_main_frm input[type="text"]{width: 80%;}
+.enq .contact_main_frm input[type="email"]{width: 80%;}
+.enq .contact_main_frm input[type="t"]{width: 80%;}
+.enq .contact_main_frm textarea{width: 80%;}
+.enq .contact_main_frm .chekbx{width: 80%;}
+.enq .contact_main_frm input[type="checkbox"]{width: 2% !important;}
+
+.enq_dtl{width: 100%;text-align: left;}
+.enq_dtl th{font: 600 15px/20px 'Ubuntu Condensed', sans-serif; color: #828282;padding: 0 50px 0 0;text-align: left;}
+.enq_dtl tr{font: 600 15px/20px 'Ubuntu Condensed', sans-serif; color: #828282;padding: 0 50px 0 0;}
+.enq_dtl tr span a{text-decoration: none; color: #E31E25;}
+.ent{padding-right: 130px !important;}
+
+.nbn_box{width: 100%; text-align: center; padding: 20px 0;}
+.nbn_box h2{font: 600 30px/35px 'Ubuntu Condensed', sans-serif; color: #828282;padding: 0 10px 0 0;}
+.nbn_box h2 span{font-weight: 700;}
+.nbn_box img{max-width: 100%; display: inline-block; margin-bottom: 20px;}
+.nbn_box a{text-decoration: none;display: block;font: 600 20px/25px 'Ubuntu Condensed', sans-serif; color: #E31E25;text-transform: capitalize; background: url(../images/arr4.png)no-repeat 75% center;}
+
+.cnt{width: 100%; padding: 30px 0 15px;}
+.cnt span{font-size: 15px !important;}
+.map_nbn{width:100%; text-align: center;padding: 30px 0; }
+.map_nbn img{max-width: 100%; display: inline-block;}
+.live_prt{width: 100%; padding: 10px 0;}
+.live_prt img{max-width: 100%; float: left;margin-right: 50px;margin-bottom: 27px;}
+.live_prt h6 a{padding-bottom: 0px;}
+
+.finance7{width: 100%; padding: 0 0 0 0px;}
+.finance7 ul{margin: 0; padding: 0;}
+.finance7 ul li{list-style: none;display: block;margin: 5px 0;font: 400 14px/22px 'Ubuntu Condensed', sans-serif;color: #828282;padding: 0 0 0 20px; }
+.finance7 ul li a{text-decoration: none;font: 400 14px/22px 'Ubuntu Condensed', sans-serif;color: #828282;display: block;}
+.prd_detl ul{margin: 0 0 0 20px; padding: 0;}
+.prd_detl ul li{list-style: none;display: block;margin: 5px 0;font: 400 14px/22px 'Ubuntu Condensed', sans-serif;color: #828282;padding: 0 0 0 20px;background: url(../images/blt2.png)no-repeat left 8px; }
+
+.content-split1 h2{ color: #e31e25;
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 20px;}
+
+/*.service_body_innr .round_icon_bx2 img{max-height: 156px;}*/
+
+
+
+.wpcf7-list-item{float: left !important; width: 100% !important;} 
+.wpcf7-list-item.first{float: left !important ; width: 100% !important;} 
+
+.contact_main_frm_in br{display: none;}
+.contact_main_frm_in p{display: none;}
+.execphpwidget {padding: 0 0 15px;}
+
+.blog_in ul{margin: 0 0 15px; padding: 0; list-style-image: url("../images/blt2.png");}
+.blog_in ul li{list-style: none;display: block;margin: 5px 0;font: 400 13px/22px 'Ubuntu', sans-serif;color: #828282;padding: 0 0 0 20px;background: url(../images/blt2.png)no-repeat left 8px; }
+
+.prd_detl_par{width: 100%;padding-bottom: 15px;}
+.prd_detl_par ul{margin:0 0 20px 25px; padding: 0;}
+.prd_detl_par ul li{list-style: none;display: block;margin: 5px 0;font: 400 14px/22px 'Ubuntu', sans-serif;color: #828282;padding: 0 0 0 20px;background: url(../images/blt.png)no-repeat left 8px;}
+
+.content-split1{width: 100%;padding-bottom: 15px;}
+.content-split1 ul{margin: 0 0 20px 20px; padding: 0;}
+.content-split1 ul li{list-style: none;display: block;margin: 5px 0;font: 400 14px/22px 'Ubuntu', sans-serif;color: #828282;padding: 0 0 0 15px;background: url(../images/blt.png)no-repeat left 8px;}
+
+
+div.wpcf7-response-output{margin: 0px !important; color: #fff;}
+span.wpcf7-not-valid-tip{text-align: right;}
+
+.responsive_img{margin: 0 0 15px; max-width: 100%;}
+.round_icon_bx2Img{width: 100%;}
+.round_icon_bx2Img a{padding: 0px !important; background: none !important;}
+
+.product_holder{width: 100%; position: relative;min-height:155px;}
+.product_holder a{background: none !important; padding: 0px; width: 100%;}
+.product_holder .rolloverlayer{ display: none; width: 40px; height: 40px; margin: -20px 0 0 -20px; left: 50%; top: 50%;}
+
+.product_holder:hover .rolloverlayer{display: block !important;}
+.product_full_holder{text-align: left;}
+.product_full_holder h5{padding-bottom: 8px;}
+.product_full_holder h5 a{background: none !important; font-weight: normal; font-size: 17px;}
+
+.product_full_holder img{max-height: 156px;}
+.operating_lease br{display: none;}
+
+.prodtls_holder .pro_dtls_img_holder a{padding: 0px; width: 100%; background: none;}
+.prodtls_holder h5{color: #828282; font-size: 13px; text-align: center; font-family: 'Ubuntu', sans-serif;}
+.prodtls_holder .lightlink{background: none !important; font-size: 14px; font-family: 'Ubuntu', sans-serif; width: auto; display:inline-block; padding: 0px !important; }
+.prodtls_holder .red_anc5 a{font-family: 'Ubuntu', sans-serif; font-weight: normal; padding: 0 22px 0 15px !important} 
+.prodtls_holder .icon_acn4 a{font-family: 'Ubuntu', sans-serif; background-image: url(../images/whit_aro.png) !important; background-position: 97% center; font-weight: normal !important; padding: 0 22px 0 15px !important}
+
+.blog_lft h4{margin: 0px !important;}
+.blog_lft h4.entry-title a{font-family: 'Ubuntu', sans-serif; text-decoration: none !important;}
+.blog_lft .upw-posts article{padding-bottom: 6px; margin-bottom: 6px; border: none;}
+.blog_lft .upw-posts.hfeed{margin-bottom: 15px;}
+
+.blog_dtl h4 a{color: #5d5d5d; font-size: 22px; font-weight: normal; font-family: 'Ubuntu', sans-serif; padding: 0px; margin-bottom: 6px; line-height: normal;}
+
+
+.blog_dtl ol li{font:400 13px/22px 'Ubuntu', sans-serif; color: #828282; margin: 0; padding: 0 0 8px;}
+.blog_dtl .blog_in{border-bottom: none;}
+.blog_dtl .alignleft{display: block; margin: 5px auto;}
+.blog_dtl .alignright{display: block; margin: 5px; float: right;}
+.blog_dtl .aligncenter{display: block; margin: 5px auto;}
+
+.budget h1{ font-size: 22px; color: #5d5d5d;}
+.budget h2{ font-size: 17px; color: #888888;}
+
+.list-budget{margin: 0 0 15px; padding: 0; list-style: none;}
+.list-budget li{list-style: none;display: block;margin: 5px 0;font: 400 13px/22px 'Ubuntu', sans-serif;color: #828282;padding: 0 0 0 20px;background: url(../images/blt2.png)no-repeat left 8px; }
+
+
+/*16.12.15*/
+.nbay_frm{width: 80%;}
+.nbay_frm .nbay_row{padding-bottom: 30px;}
+.nbay_frm .nbay_row .nbay_img img{width: 100%;}
+.nbay_frm .nbay_row .nbay_cont p span{color: #e31e25;font-weight: bold;}
+.nbay_frm .nbay_row .nbay_cont p strong{color: #828282; font-weight: bold;}
+.nbay_frm .nbay_row .nbay_cont label{width: auto; padding-right: 20px;}
+.nbay_frm .nbay_row .nbay_cont input[type="text"]{float: left;}
+.nbay_frm .nbay_row .nbay_cont p{padding-bottom: 7px;}
+
+.nbay_top_frm{padding: 50px 0; display: inline-block; width: 100%;}
+
+.contact_main_frm .multi{height: 100px; width: 100%;}
+
+.chekbx span.wpcf7-list-item{margin-left: 0px;}
+.office_hdng_123{font:400 22px/30px 'Ubuntu', sans-serif; color: #5d5d5d; margin-top: 0px;}
+
+
+.rating_sec{display: inline-block; width: 75%; border-top: 2px solid #333; padding: 10px 0 0 0;}
+.rating_sec .rating_sec_row{display: inline-block; width: 100%;}
+.rating_sec .rating_sec_row .rat_left{float: left; width:23%;}
+.rating_sec .rating_sec_row .rat_right{float: left; width: 65%;}
+
+.rating_sec .rating_sec_row .rat_right .wpcf7-list-item{float: left !important; width: auto !important; margin-right: 7px; font:400 12px/22px 'Ubuntu', sans-serif;}
+.rating_sec .rating_sec_row .rat_right .wpcf7-list-item label{font-weight: normal;}
+
+.nbn_new_bx h2{}
+.nbn_new_bx h2 a{background: none; color: #7c7b7b; padding: 0px; font-family: 'Ubuntu', sans-serif; font-weight: normal;text-transform: none;}
+.nbn_new_bx h2 a span{font-weight: bold;}
+
+.nbn_new_bx a{background-position: right center;
+    display: inline-block;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: normal;
+    padding-right: 24px;}
+
+.navbar-default .navbar-nav > li.nav_parent > a:first-child{display: none;} 
+
+
+.blog_in.brdr{border-bottom:1px solid #828282;}
+.navigation.archive{padding-bottom:10px;}
+
+
+.map_nbn iframe {height: 1550px !important;}
+.desk_hide {
+    display: none;
+}
+.nav-menu-srm > li a.parent {
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    top: 0;
+    width: 30px;
+}
+.mob_menu .nav-menu-srm > li.plus .parent {
+    background-position: center 15px !important;
+}
+
+
+
+
+.main-navigation-srm{padding: 0px !important;}
+.rmm-toggled-controls{background: #e31e25 !important; border-radius:6px !important;}
+.main-navigation-srm .nav-menu-srm > li.minus .parent{background-position: center !important;}
+
+.nav-menu-srm{background: #e31e25 !important;}
+.main-navigation-srm .nav-menu-srm li a{font-size: 16px; color: #fff !important; font-size: 16px !important;}
+.main-navigation-srm .nav-menu-srm li a:hover{font-size: 16px; color: #fff !important;}
+.main-navigation-srm .nav-menu-srm li .sub-menu{background: #7c7b7b !important;}
+
+.main-navigation-srm .nav-menu-srm li .sub-menu li{background: #7c7b7b !important;}
+.main-navigation-srm .nav-menu-srm li{border: none !important;}
+.sr-menu-toggle {font-size: 19px;}
+
+
+.contact_main_frm.frm-big{ width:75%;}
+.contact_main_frm.frm-big label{width: 35%; float: left;font:400 24px/40px 'Ubuntu', sans-serif;color: #828282;}
+.contact_main_frm.frm-big input[type="text"]{width: 65%; float: right;height:40px; border: 1px solid #666666;padding: 0 10px;font:400 13px/40px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm.frm-big input[type="email"]{width: 65%; float: right;height: 40px; border: 1px solid #666666;padding: 0 10px;font:400 13px/40px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm.frm-big input[type="tel"]{width: 65%; float: right;height: 40px; border: 1px solid #666666;padding: 0 10px;font:400 13px/40px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm.frm-big select{width: 65%; float: left;height: 40px; border: 1px solid #666666;padding: 0 10px;font:400 13px/40px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm.frm-big input[type="checkbox"]{width: 5%; float:left; margin-right:8px; border: 1px solid #000;padding: 0 10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282;}
+.contact_main_frm.frm-big textarea{width: 65%; float:right; height: 140px;border: 1px solid #666666;padding:10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;color: #828282; }
+.contact_main_frm.frm-big input[type="submit"]{ background: #e31e25 url("../images/arr23.png") no-repeat scroll 90% center;border-radius: 4px;color: #fff;display: inline-block; font: 500 20px/48px 'Ubuntu', sans-serif; padding: 0 32px 0 20px;text-decoration: none;border: none; outline: none; }
+
+.alignright{ float:right; margin:0 0 15px 15px;}
+.service_body_innr p img{ margin:0 auto;}
+.service_body_innr ul{ margin:0px 0 0 5px; padding:0px; width:100%;}
+.service_body_innr ul li{ margin:0px; padding:0px; color: #828282; font: 400 13px/22px "Ubuntu",sans-serif;}
+.service_body_innr p span.h1{ color: #5d5d5d;
+    font-family: ubuntu,Arial,Helvetica,sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.6em; text-align:center;}
+	
+	
+	
+	
+
+
+@media only screen and (min-width:992px) and (max-width:1199px)
+{
+.navbar-default .navbar-nav > li > a{ padding: 15px 11px !important;}
+.right_frm h3{/*font: 600 18px/30px 'Ubuntu Condensed',sans-serif; */ font-size: 18px;}
+.right_frm_in{ margin-bottom: 3px; }
+.right_frm_in input[type="submit"]{/*font: 600 20px/19px 'Ubuntu Condensed', sans-serif;*/  font-size: 20px;}
+.comp_logo ul li{margin: 0 15px;}
+.comp_logo2 ul li{margin: 0 5px;}
+.testim h4{/*font: 600 15px/20px 'Ubuntu Condensed', sans-serif;*/  font-size: 15px;}
+.ftr_link_sec ul li {margin-bottom: 4px;}
+.news input[type="submit"]{width: 17%;}
+.service_body_innr .round_icon_bx2 h4{font-size:14px; }
+.service_body_innr .round_icon_bx2 .icon_acn4 a{font-size: 14px;}
+.red_anc5 a{font-size: 14px;}
+.right_frm{padding: 18px 21px 15px 10px;}
+
+	.body_top .body_top_form {
+		height: 280px;
+	}
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px)
+{
+.sub-menu{width: 150px;}
+.right_frm_in input[type="text"], .right_frm_in input[type="email"], .right_frm_in textarea{width: 70%;}
+.right_frm_in label{width: 30%;}
+.navbar-default .navbar-nav > li > a{ padding: 15px 7px !important;  font-size: 12px !important;}
+.contact ul li{ /*font: 500 23px/32px 'Ubuntu', sans-serif;*/ background-position: 0 0;  font-size: 23px; line-height: 33px;}
+.right_frm h3{ background: rgba(0, 0, 0, 0) url("../images/wtch.jpg") no-repeat scroll 7% 3px; /*font: 600 15px/30px 'Ubuntu Condensed', sans-serif;*/  font-size: 15px;}
+.right_frm_in label{/*font: 400 12px/13px 'Ubuntu', sans-serif;*/  font-size: 12px;}
+.right_frm_in{margin-bottom: 0;}
+.right_frm_in input[type="submit"]{/*font: 600 15px/15px 'Ubuntu', sans-serif;*/  font-size: 15px;}
+.right_frm_in textarea{margin-bottom: 2px;height: 30px;}
+.right_frm{padding: 3px 6px;}
+.round_icon_bx a{ /*font: 600 13px/22px 'Ubuntu', sans-serif;*/ background: rgba(0, 0, 0, 0) url("../images/arr.png") no-repeat scroll right center;  font-size: 13px;}
+.australias_prt h2{/*font: 400 20px/30px 'Ubuntu Condensed', sans-serif;*/ padding: 0 0 108px;  font-size: 20px;}
+
+.effective_prt_para p{/*font: 400 13px/16px 'Ubuntu ', sans-serif;*/ font-size: 13px;}
+.we_partner h2{ /*font: 400 16px/18px 'Ubuntu Condensed', sans-serif;*/ font-size: 16px;}
+.round_icon_bx2 a { background: rgba(0, 0, 0, 0) url("../images/arr.png") no-repeat scroll 93% center;}
+.round_icon_bx2 h4{ /*font: 600 15px/20px 'Ubuntu Condensed', sans-serif;*/ font-size: 15px;}
+.comp_logo ul li{margin: 0 18px; width: 11%;}
+.comp_logo ul li img{width: 100%}
+.comp_logo2 ul li{margin: 0 18px; width: 14%;}
+.comp_logo2 ul li img{width: 100%}
+.news input[type="text"]{font-size: 11px;}
+.testim h4{font-size: 13px;}
+.ftr_link_sec h4 {  font-size: 13px;}
+.ftr_link_sec ul li a{font-size: 10px;}
+.ftr_link_sec ul{margin-right: 5px;}
+.news input[type="text"]{width: 78%;}
+.news input[type="submit"]{width: 22%;}
+.inner_body h2{padding-bottom: 0px !important;}
+.service_body_innr h3{font-size: 18px;}
+.service_body_innr .round_icon_bx2 .icon_acn a{font-size: 15px;}
+.round_icon_bx2 a{font-size: 16px;}
+.service_body_innr .round_icon_bx2 a {  background: rgba(0, 0, 0, 0) url("../images/arr.png") no-repeat scroll right center;}
+.service_body_innr .round_icon_bx2 h4{font-size: 10px;}
+.service_body_innr h4{font-size: 17px;}
+
+.contact_main_frm{width: 70%;}
+.office_bx a{font-size: 11px; }
+.from_price_bx{width: 50%;}
+.service_body_innr .round_icon_bx2 .icon_acn4 a{font-size: 12px;width: 100%;}
+.red_anc5 a{font-size: 12px !important;width: 100%;}
+.img_menu ul li{width: 130px;}
+.ready_left a{width: auto; font-size: 18px;}
+.pageheadsec img{ width: 100%;}
+
+.service_body_innr .round_icon_bx2 a:first-child{width: 100%; padding: 0px;}
+.service_body_innr .round_icon_bx2 a:first-child img{height: auto;}
+.service_body_innr .round_icon_bx2 a{font-size: 14px;}
+.body_top{padding-bottom: 20px;}
+.inner_body{padding-bottom: 20px;}
+.rating_sec{width: 97%;}
+
+.map_nbn{overflow-x: scroll;}
+.map_nbn iframe{width: 800px;}
+
+.contact_main_frm.frm-big { width: 100%;}
+
+	.body_top .col-sm-8 {
+		padding-right: 7.5px;
+	}
+
+	.body_top .col-sm-4 {
+		padding-left: 7.5px;
+	}
+
+	.body_top_baner > img {
+		max-width: 100%;
+	}
+
+	.body_top .top_slider .carousel-inner img {
+		min-height: unset;
+	}
+
+	.body_top .body_top_form {
+		height: 213px;
+	}
+
+	.body_top .body_top_form a {
+		padding: 17px 23px;
+	}
+
+	.body_top .body_top_form .button_container strong {
+		font: 400 19px/24px "Ubuntu",sans-serif;
+		padding: 23px 0;
+	}
+
+	.body_top .body_top_form .button_container .form_button {
+		font: 400 22px/25px "Ubuntu",sans-serif;
+	}
+
+}
+
+
+@media only screen and (max-width:767px) 
+{
+.logo{width: 100%; text-align: center; margin-bottom: 15px;}
+.contact {text-align: center;}
+.right_frm{margin-top:15px; }
+.effective_prt h2{ /*font: 400 17px/18px 'Ubuntu Condensed', sans-serif;*/ font-size: 17px;}
+.round_icon_bx {   margin-top: 10px;}
+.ftr_link_sec{padding-bottom: 20px;}
+.australias_prt h2{/*font: 400 16px/23px 'Ubuntu Condensed', sans-serif;*/ padding: 20px 0; font-size: 26px;}
+.round_icon_bx2{margin-top: 0;}
+.effective_prt_vid {  margin-bottom: 15px;}
+.effective_prt_para{padding-top: 20px;}
+.we_partner h2{/*font: 400 17px/18px 'Ubuntu Condensed', sans-serif;*/ font-size: 20px;}
+.comp_logo ul li{margin: 0 15px; width: 11%;}
+.comp_logo ul li img{width: 100%}
+.comp_logo2 ul li{margin: 0 16px; width: 14%;}
+.comp_logo2 ul li img{width: 100%}
+.news input[type="submit"] {  background: rgba(0, 0, 0, 0) url("../images/news.png") no-repeat scroll center center; width: 12%;}
+.news{margin-bottom: 20px;display: inline-block;}
+.inner_body h2 {color: #e31e25; /*font: 400 25px/35px 'Ubuntu Condensed', sans-serif; !important;*/ font-size: 25px !important;}
+.make_the_switch{background: #fff;}
+.make_the_switch h2{color: #e31e25;}
+.map_prt{padding-bottom: 30px;}
+.service_body_innr{padding-bottom: 10px;}
+.from_price_bx{width: 50%;}
+.service_body_innr .round_icon_bx2 .icon_acn4 a{font-size: 13px;width: 100%;}
+.red_anc5 a{font-size: 13px !important;width: 100%;}
+.img_menu {margin-bottom: 20px;}
+.pageheadsec img{ width: 100%;}
+
+.right_frm h3{padding:0 0 8px 42px; text-align: left; background-position: 0 3px;}
+.service_body_innr .round_icon_bx2 a:first-child{padding: 0px;}
+.service_body_innr .round_icon_bx2 .icon_acn a{padding: 0 27px 0 10px !important;}
+
+.inner_body h2{line-height: normal;}
+.product_full_holder{text-align: center;}
+
+.nbay_frm{width: 100%; padding:15px;}
+.nbay_img{padding-bottom: 15px;}
+.nbay_top_frm{padding: 30px 0;}
+
+#main .alignleft{max-width: 100%; height: auto; margin: 6px 0;}
+#main .alignright{max-width: 100%; height: auto; margin: 6px 0;}
+#main .aligncenter{max-width: 100%; height: auto; margin: 6px 0;}
+
+.rating_sec{width: 100%;}
+
+.map_nbn{overflow-x: scroll;}
+.map_nbn iframe{width: 800px;}
+
+.navbar-default .navbar-nav > li.nav_parent > a{background: url(../images/drop_down.png) no-repeat 96% center;}
+.navbar-default .navbar-nav > li.nav_parent > a:hover{background: url(../images/drop_down.png) no-repeat 96% center #5d5d5d !important;}
+.navbar-default .navbar-nav > li.nav_parent:hover > a{background: url(../images/drop_down.png) no-repeat 96% center #5d5d5d !important;}
+/*.navbar-default .navbar-nav > li.nav_parent.menu-item-has-children > a{background: url(../images/drop_down.png) no-repeat 96% center #5d5d5d !important;}*/
+.desk_hide {
+    display: block;
+}
+.mob_hide{ display: none;}
+.mob_menu {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.contact_main_frm.frm-big { width: 100%;}
+.contact_main_frm.frm-big label{width:100%; font:400 24px/40px 'Ubuntu', sans-serif;}
+.contact_main_frm.frm-big input[type="text"]{width: 100%; height:40px; font:400 13px/40px 'Ubuntu Condensed', sans-serif;}
+.contact_main_frm.frm-big input[type="email"]{width: 100%; height: 40px;font:400 13px/40px 'Ubuntu Condensed', sans-serif;}
+.contact_main_frm.frm-big input[type="tel"]{width: 100%; height: 40px; font:400 13px/40px 'Ubuntu Condensed', sans-serif;}
+.contact_main_frm.frm-big select{width:100%; height: 40px; font:400 13px/40px 'Ubuntu Condensed', sans-serif;}
+.contact_main_frm.frm-big input[type="checkbox"]{width: 5%; float:left; margin-right:8px; border: 1px solid #000;padding: 0 10px;font:400 13px/22px 'Ubuntu Condensed', sans-serif;}
+.contact_main_frm.frm-big textarea{width:100%; height: 140px; font:400 13px/22px 'Ubuntu Condensed', sans-serif; }
+.contact_main_frm.frm-big .chekbx {
+    float: right;
+    width: 100%;
+}
+
+	.body_top_baner > img {
+		width: 100%;
+	}
+	.body_top .top_slider .carousel-inner > .item,
+	.body_top .top_slider .carousel-inner img {
+		min-height: unset !important;
+	}
+
+	.body_top .col-sm-4 {
+		margin-top: 20px;
+	}
+
+	.body_top .body_top_form {
+		height: 200px;
+		background-size: cover;
+	}
+
+	.body_top .body_top_form .button_container {
+		text-align: center;
+	}
+
+	.body_top .body_top_form .button_container strong {
+		width: 100%;
+		font: 400 26px/32px "Ubuntu",sans-serif;
+		padding: 25px 0;
+	}
+
+	.body_top .body_top_form .button_container .form_button {
+		width: auto;
+		font: 400 26px/30px "Ubuntu",sans-serif;
+		display: inline-block;
+		padding: 5px 65px;
+	}
+
+}
+
+
+
+@media only screen and (max-width:639px) 
+{
+
+.comp_logo ul li{margin: 0 11px; width: 11%;}
+.comp_logo ul li img{width: 100%}
+.comp_logo2 ul li{margin: 0 12px; width: 14%;}
+.comp_logo2 ul li img{width: 100%}
+.our_clients h3{/*font: 400 18px/25px 'Ubuntu Condensed', sans-serif;*/ font-size: 18px;}
+.top_header_innr ul li{ display: inline-block;float: none;}
+.top_header_innr ul{width: auto;display: inline-block; }
+.top_header_innr{width: 100%;text-align: center;}
+.top_header_innr span{float: left;}
+.contact_main_frm{width: 80%;}
+.service_body_innr { padding-bottom: 0;}
+.office_img .contact_main_frm {  width: 100%;}
+.calculator{padding: 20px 0 0 ;}
+.operating_lease{width: 100%;}
+.prd_detl{width: 100%;}
+.prd_detl_rit{width: 100%;}
+.speed_cost ul li{margin: 0 9px 0 0;}
+.video{width: 100%;}
+.innr_img3{width: 100%;}
+.img_menu ul li{width: 109px;}
+.ftr_bottom p{ width: 100%; text-align: center; padding-bottom: 10px;}
+.contact_main_frm.frm-big label{width:100%; font:400 20px/40px 'Ubuntu', sans-serif;}
+}
+
+
+
+@media only screen and (max-width:479px)
+{
+.nw_div li:nth-child(2) a{border-right: 1px solid #e31e25 !important;}
+.top_header_innr ul li a{font: 11px/14px Arial,Helvetica,sans-serif;padding-right: 9px;}
+.contact ul li{background:url("../images/ph.jpg") no-repeat scroll left 9px / 14% auto;   /*font: 500 19px/25px 'Ubuntu Condensed', sans-serif;*/ font-size: 19px; line-height: 38px;}
+.right_frm h3{/*font: 600 18px/30px 'Ubuntu Condensed', sans-serif;*/ font-size: 21px;}
+
+.effective_prt h2{background: none; border-bottom: 2px solid #5D5D5D; /*font: 400 17px/25px 'Ubuntu Condensed', sans-serif;*/ padding: 0 0 10px; margin-bottom: 10px;font-size: 17px;}
+.we_partner h2{background: none; border-bottom: 2px solid #5D5D5D; /*font: 400 17px/25px 'Ubuntu Condensed', sans-serif;*/padding: 0 0 10px; margin-bottom: 10px;font-size: 17px; }
+.comp_logo ul li {  margin: 0 6px;   width: 11%;}
+.comp_logo2 ul li { margin: 0 7px;width: 14%;}
+.our_clients h2{background: none; border-bottom: 2px solid #5D5D5D; /*font: 400 17px/25px 'Ubuntu Condensed', sans-serif;*/padding: 0 0 10px; margin-bottom: 10px ; font-size: 17px;}
+.comp_logo2 { margin-bottom: 10px;}
+.our_clients_btn a{ /*font: 700 14px/48px 'Ubuntu Condensed', sans-serif;*/	font-size: 14px;}
+.ftr_link_sec ul{width: 100%;margin: 0;}
+.inner_body h2 {   /*font: 400 16px/24px 'Ubuntu Condensed', sans-serif;*/ font-size: 16px;}
+.body_top{padding-bottom: 21px;}
+.service_body_innr h3{/*font: 600 15px/24px 'Ubuntu Condensed', sans-serif;*/ font-size: 15px;}
+.red_anc a{/*font: 700 14px/48px 'Ubuntu Condensed', sans-serif;*/ margin: 10px 4px; font-size: 14px;}
+.service_body_innr h4{/*font: 400 15px/21px 'Ubuntu Condensed', sans-serif;*/ font-size: 15px;}
+.ready_left a{/*font: 700 12px/37px 'Ubuntu Condensed', sans-serif;*/ width: auto; font-size: 12px;}
+.ready_left h3 {  /*font: 600 17px/30px 'Ubuntu Condensed', sans-serif;*/ font-size: 17px;}
+.contact_main_frm { width: 100%;}
+.office_img .contact_main_frm label{width: 100%;text-align: left;}
+.office_img  .contact_main_frm input[type="file"]{width: 100%;text-align: left;}
+.office_img  .contact_main_frm input[type="text"]{width: 100%;text-align: left;}
+.office_img  .contact_main_frm input[type="email"]{width: 100%;text-align: left;}
+.office_img  .contact_main_frm input[type="checkbox"]{width: 100%;text-align: left;}
+.office_img  .contact_main_frm .chekbx{width: 100%}
+.office_img .contact_main_frm select{width: 100%;}
+.office_bx{width: 100%;}
+.office_bx_img{text-align: center;width: 100%;}
+.office_bx img {max-width: 100%;display:inline-block;}
+.from_price_bx{width: 100%;}
+.innr_img2{width: 100%;}
+.speed_cost ul li a img {   width: 60px;}
+.img_menu ul li{width: 100%;margin: 2px 0;}
+.finance2{padding: 0;}
+.pad_r8 {
+    padding-left: 0 !important;
+    padding-top: 15px !important;
+}
+.finance2 ul ul{padding: 0 0 0 20px;}
+.finance5{padding: 0;}
+.finance5 ul ul{padding: 0 0 0 20px;}
+.finance5 > ul > li{padding: 0;}
+#newsimages{ width: 100%;}
+
+
+.blog_dtl .alignleft{width: 100%; height: auto; margin: 6px 0;}
+.blog_dtl .alignright{width: 100%; height: auto; margin: 6px 0;}
+.blog_dtl .aligncenter{width: 100%; height: auto; margin: 6px 0;}
+
+.blog_dtl .blog_in{padding-top: 0px;}
+.blog_dtl .blog_in h4{margin-top: 0px;}
+
+}
+
+
+@media only screen and (max-width:450px)
+{
+.service_body_innr p img{ max-width:280px; width:auto;}
+}
+
+
+
+@media only screen and (max-width:320px)
+{
+
+	.body_top .body_top_form {
+		height: 150px;
+	}
+
+	.body_top .body_top_form .button_container strong {
+		font: 400 14px/20px "Ubuntu",sans-serif;
+		padding: 15px 0;
+	}
+
+	.body_top .body_top_form .button_container .form_button {
+		font: 400 16px/22px "Ubuntu",sans-serif;
+		padding: 5px 25px;
+	}
+
+}
+
+
+
+
+

@@ -1,0 +1,371 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.hidden {
+	display: none !important;
+}
+
+#form_left {
+	width: 60%;
+	height: 100%;
+	display: block;
+	float: left;
+}
+
+#form_img {
+	width: 40%;
+	height: 100%;
+	background: url('../images/r-image.jpg') center bottom no-repeat;
+	background-size: cover;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+#form_img #close_button {
+	width: 18px;
+	height: 18px;
+	background: url('../images/x.svg') #fff center bottom no-repeat;
+	border: 12px solid #fff;
+	border-radius: 50px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+#form_img #logo {
+	width: 344px;
+	height: 85px;
+	margin: 113px auto 0;
+	background: url('../images/logo.svg') center bottom no-repeat;
+}
+
+#form {
+	width: 510px;
+	max-width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	display: table;
+}
+
+#form_container {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+}
+
+#form_container h1.title {
+	display: none;
+}
+
+#form_container div.steps {
+	width: 510px;
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+	padding-top: 40px;
+}
+
+#form_container div.steps ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#form_container div.steps ul li {
+	width: 14px;
+	height: 14px;
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+}
+
+#form_container div.steps ul li a {
+	text-decoration: none;
+}
+
+#form_container div.steps ul li a span.number:after {
+	content: '\f111';
+	font-family: 'FontAwesome';
+	font-size: 10px;
+	color: #eaeaea;
+}
+
+#form_container div.steps ul li.current a span.number:after,
+#form_container div.steps ul li.done a span.number:after {
+	content: '\f111';
+	font-family: 'FontAwesome';
+	font-size: 11px;
+	color: #de2221;
+}
+
+#form_finish .content h3,
+#form_container .content h3 {
+	font: 600 28px/32px 'Ubuntu', sans-serif;
+	color: #242625;
+	margin: 60px 0;
+}
+
+#form_finish .content h3 {
+	margin-bottom: 40px;
+}
+
+#form_finish .content h5 {
+	font: 400 24px/38px 'Ubuntu', sans-serif;
+	color: #242625;
+	margin: 40px 0 80px;
+}
+
+#form_container .content .section input[type="checkbox"]{
+	display: none;
+}
+
+#form_container .content .section .container label {
+	width: 100%;
+	height: 40px;
+	background: #fafafa;
+	border-radius: 1px;
+	font: 400 16px/40px 'Ubuntu', sans-serif;
+	color: #242625;
+	cursor: pointer;
+	margin: 14px 0;
+	display: block;
+	position: relative;
+}
+
+#form_container .content .section .container.newsletter label {
+	width: auto;
+	height: 40px;
+	background: none;
+	border-radius: 0;
+	font: 400 16px/40px 'Ubuntu', sans-serif;
+	color: #242625;
+	cursor: pointer;
+	margin: 13px 0 14px;
+	display: inline-block;
+	position: relative;
+}
+
+#form_container .content .section .container.newsletter input[type="checkbox"]:checked + label,
+#form_container .content .section .container.newsletter label:hover {
+	background: none;
+}
+
+#form_container .content .section .container.newsletter span.checkbox {
+	padding-left: 30px;
+}
+
+#form_container .content .section .container.newsletter span.checkbox::after {
+	width: 12px;
+	height: 9px;
+	left: 0px;
+	top: 10px;
+	border: 2px solid #e5e5e5;
+	border-radius: 1px;
+	margin: 0;
+	padding: 4px 2px 3px 2px;
+}
+
+#form_container .content .section .container.newsletter input[type="checkbox"]:checked + label span.checkbox::after {
+	width: 12px;
+	height: 9px;
+	background: url("../images/check.svg") center center no-repeat;
+	background-size: 12px 10px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all 0s ease-in-out;
+	-ms-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+}
+
+#form_container .content .section .container span.checkbox{
+	padding: 0 10px 0 16px;
+}
+
+#form_container .content .section .container span::before,
+#form_container .content .section .container span::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#form_container .content .section .container span.checkbox::after {
+	content: '';
+	background: none;
+	right: 10px;
+	top: 0px;
+}
+
+#form_container .content .section .container label:hover {
+	background: #f2f2f2;
+}
+
+#form_container .content .section .container input[type="checkbox"]:checked + label {
+	background: #fef4f4;
+}
+
+#form_container .content .section .container input[type="checkbox"]:checked + label span.checkbox::after {
+	width: 20px;
+	height: 16px;
+	background: url("../images/check.svg") center center no-repeat;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+#form_container .content .section .container input[type="text"] {
+	width: 93%;
+	border: 2px solid #e5e5e5;
+	border-radius: 1px;
+	font: 400 16px/16px 'Ubuntu', sans-serif;
+	color: #252525;
+	padding: 11px 3%;
+	margin: 11px 0;
+	display: block;
+}
+
+#form_container .content .section .container input[type="text"]::-webkit-input-placeholder,
+#form_container .content .section .container input[type="text"]:-moz-placeholder,
+#form_container .content .section .container input[type="text"]::-moz-placeholder,
+#form_container .content .section .container input[type="text"]:-ms-input-placeholder {  
+	color: #959595;
+}
+
+#form_container .content .section .container input[type="text"].novalid {
+	border: 2px solid #e21f27;
+}
+
+#form_container .actions ul {
+	text-align: center;
+	padding: 0;
+	margin: 60px auto 0;
+}
+
+#form_container .actions ul li {
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	margin: 0 20px;
+}
+
+#form_container .actions ul li a {
+	font: 600 28px/32px 'Ubuntu', sans-serif;
+	color: #d8d8d8;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#form_container .actions ul li.disabled a:hover {
+	color: #d8d8d8;
+}
+
+#form_container .actions ul li.enabled a,
+#form_container .actions ul li a:hover {
+	color: #e41d24;
+}
+
+#form_finish {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+}
+
+#form_finish .content {
+	text-align: center;
+}
+
+#form_finish .content .logo {
+	width: 170px;
+	height: auto;
+}
+
+#form_finish .content ul {
+	padding: 0;
+	margin: 30px 0;
+}
+
+#form_finish .content ul li {
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	margin: 0 7px;
+}
+
+#form_finish .content ul li span {
+	font: 600 14px/18px 'Ubuntu', sans-serif;
+	color: #242625;
+	text-transform: uppercase;
+}
+
+#form_finish .content p.policy,
+#form_finish .content p.policy a,
+#form_finish .content p.policy a:hover {
+	font: 600 14px/18px 'Ubuntu', sans-serif;
+	color: #959595;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.submit_loading {
+	width: 24px;
+	height: 24px;
+	display: block;
+	background: url('../images/loader.gif') center center no-repeat;
+	margin: 5px 0 0px 15px;
+	float: right;
+}
+
+@media only screen and (max-width:991px){
+	#form_img #logo {
+		max-width: 85%;
+	}
+}
+
+@media only screen and (min-width:642px){
+	#form {
+		max-width: 90% !important;
+	}
+}
+
+@media only screen and (max-width:641px){
+	#form_img {
+		width: 0px;
+	}
+
+	#form_left {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:479px){
+	#form_img #close_button {
+		right: 10px;
+		top: 10px;
+	}
+
+	#form_container div.steps {
+		max-width: 100%;
+		padding-top: 10px;
+	}
+
+	#form_finish .content h3,
+	#form_container .content h3 {
+		margin: 35px 0 10px;
+	}
+
+	#form_container .actions ul {
+		margin: 20px auto 0;
+	}
+
+	#form_container .content .section .container.newsletter label {
+		font: 400 14px/36px "Ubuntu",sans-serif;
+	}
+}

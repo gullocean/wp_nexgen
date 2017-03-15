@@ -1,0 +1,34 @@
+/*
+Theme Name: Nexgen
+
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+#cartintro > ul > li {
+    list-style: outside none none;
+    display: block;
+    margin: 5px 0px;
+    font: 400 14px/22px "Open Sans",sans-serif;
+    color: #828282;
+    padding: 0px 0px 0px 20px;
+    background: transparent url("../images/blt2.png") no-repeat scroll left 8px;
+}
+
+.prd_detl_par ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.prd_detl_par ul li {
+    list-style: outside none none;
+    display: block;
+    margin: 5px 0px;
+    font: 400 14px/22px "Open Sans",sans-serif;
+    color: #828282;
+    padding: 0px 0px 0px 20px;
+    background: transparent url("../images/blt2.png") no-repeat scroll left 8px;
+}
+.round_icon_bx2Img a{background:none !important;}
