@@ -162,7 +162,16 @@ wp_nav_menu( $defaults );
 	</div>
 </footer>
 
-<div id="internal_form_overlay">
+<div class="modal fade" id="quoteForm" tabindex="-1" role="dialog" aria-labelledby="quoteFormTitle" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<?php echo do_shortcode('[wizard id="1"]'); ?>
+		</div>
+	</div>
+</div>
+
+
+<!-- <div id="internal_form_overlay">
 	<div id="internal_form_table">
 		<div id="internal_form_table_cell">
 			<div id="internal_form_box">
@@ -282,7 +291,7 @@ wp_nav_menu( $defaults );
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

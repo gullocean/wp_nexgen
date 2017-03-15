@@ -76,6 +76,7 @@ text-transform: uppercase;}
 	background: #e31e27;
 	border-radius: 2px;
 	display: block;
+	text-align: center;
 }
 
 .body_top .body_top_form .button_container strong {
@@ -100,6 +101,7 @@ text-transform: uppercase;}
 	text-decoration: none;
 	margin: 0 auto;
 	padding: 5px;
+	border: none;
 }
 
 .body_top .body_top_form a:hover,

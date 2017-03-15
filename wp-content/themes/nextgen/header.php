@@ -290,11 +290,17 @@ wp_nav_menu( $defaults );
 			<div class="col-sm-4">
 				<div class="body_top_form">
 					<?php /* <a href="<?php echo home_url( '/quote-form/' ); ?>"> */ ?>
-					<a id="show_internal_form_overlay" href="#">
+					<!-- <a id="show_internal_form_overlay" href="#">
 						<div class="button_container">
 							<strong>Free Consultation & Quote</strong>
 							<div class="form_button">GO</div>
 						</div>
+					</a> -->
+					<a id="show_internal_form_overlay" href="#" data-toggle="modal" data-target="#quoteForm">
+						<p class="button_container">
+							<strong>Free Consultation & Quote</strong>
+							<button class="form_button">GO</button>
+						</p>
 					</a>
 				</div>
 			</div>
