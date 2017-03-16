@@ -139,6 +139,84 @@ class Mondula_Form_Wizard_Shortcode {
       return $attachments;
     }
 
+    private function nexgen_data_handling($form) {
+
+		$data = [];
+		$checkbox_value = [];
+
+		foreach ($form as $value) {
+			$data[$value['api_param']] = $value['value'];
+
+			if ($value['api_param'] == 'wl_features') {
+				$checkbox_value['wl_features'][] = $value['value'];
+			}
+		}
+
+		$data['wl_features'] = implode( " ", $checkbox_value['wl_features'] );
+
+		$source = 5; // number represent "WEB-Nexgen"
+		$data['wl_leadsource'] = $source;
+
+		/*$sql = "INSERT INTO quote_data ( 
+				`contact_name`,
+				`email`,
+				`phone`,
+				`postcode`,
+				`company_name`,
+				`time`,
+				`date`,
+				`year`,
+				`source`,
+				`enquiry`
+			) values ( 
+				'".$data['lp_ContactFirstName']." ".$data['p_ContactLastName']."',
+				'".$data['lp_Email']."',
+				'".$data['lp_Phone']."',
+				'".$data['lp_Zip']."',
+				'". $data['lp_Company']."',
+				". "'$time',
+				'$date',
+				'$year',
+				'$source',
+				'".$data['lp_Comments']."'
+			)";*/
+
+		$insert = $this->addToLeadmaster( $data );
+
+		return $insert;
+
+    }
+
+    private function addToLeadmaster($data) {
+		// posting url
+		$posting_url = "http://www.crmtool.net/lp_NewLead.asp?";
+		// workgroup identifier
+		$posting_url .= "lp_CompanyID=12498";
+		// lead provider username and password
+		$posting_url .= "&lp_Username=NexgenWeb";
+		$posting_url .= "&lp_Password=pDqEXCN2C35f";
+		// lead data
+
+		foreach ($data as $i => $item) {
+		 	$posting_url .= "&".$i."=".urlencode($item);
+		}
+
+		$curl = curl_init();
+		curl_setopt_array($curl, array(
+		    CURLOPT_RETURNTRANSFER => 1,
+		    CURLOPT_URL => $posting_url
+
+		));
+		$resp = curl_exec($curl);
+
+		// TODO test return response
+		// If this function is using somewhere else, revert this changes and make a copy for new forms
+		return $resp;
+
+		curl_close($curl);
+		die;
+    }
+
     public function fw_send_email () {
         global $phpmailer;
 
@@ -176,6 +254,15 @@ class Mondula_Form_Wizard_Shortcode {
                 }
                 // send email to admin
                 $mail = wp_mail( $settings['to'], $settings['subject'], $content , $headers, $attachments);
+
+				// response from addToLeadmaster forwarding as response to ajax post - need to be positive in order to thank you step to show
+				$response = $this->nexgen_data_handling($data);
+				if( $response === true ){
+					$this->nexgen_return_json_msg( $response, 200 );
+				} else {
+					$this->nexgen_return_json_msg( $response, 500 );
+				}
+
                 // send copy to user
                 if (count($email) == 1 && $cc === "on") {
                   $copy = wp_mail( $email, "CC: ".$settings['subject'], $content, $headers);

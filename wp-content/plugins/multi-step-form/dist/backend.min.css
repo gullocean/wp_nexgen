@@ -462,7 +462,13 @@ div#TB_ajaxContent #fw-thickbox-paragraph {
 .form-field input[type="tel"],
 .form-field input[type="url"],
 .form-field textarea {
-    padding-left: 10px
+    padding-left: 10px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.form-field input[name=api_param] {
+    width: 30%;
 }
 input.fw-wizard-title {
     width: 100% !important

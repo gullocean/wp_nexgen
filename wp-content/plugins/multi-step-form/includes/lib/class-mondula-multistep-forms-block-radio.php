@@ -34,14 +34,14 @@ class Mondula_Form_Wizard_Block_Radio extends Mondula_Form_Wizard_Block {
                 if ($this->_multichoice == 'true') {
                 ?>
                 <div class="fw-choice fw-input-container" data-type="fw-checkbox">
-                    <input id="<?php echo $group.'-'.$i ?>" type="checkbox" class="fw-checkbox" name="<?php echo $group; ?>" data-id="<?php echo $i; ?>" value="<?php echo $element['value']; ?>">
+                    <input id="<?php echo $group.'-'.$i ?>" type="checkbox" class="fw-checkbox" name="<?php echo $group; ?>" data-id="<?php echo $i; ?>" value="<?php echo $element['value']; ?>" data-api="<?php echo $element['api']; ?>">
                     <label for="<?php echo $group.'-'.$i; ?>" data-labelId="<?php echo $i ?>"><?php echo $element['value']; ?></label>
                 </div>
                 <?php
               } else {
                 ?>
                 <span class="fw-choice fw-radio-row">
-                    <input id="<?php echo $group.'-'.$i ?>" type="radio" name="<?php echo $group; ?>" class="fw-radio" data-id="<?php echo $i; ?>" value="<?php echo $element['value']; ?>">
+                    <input id="<?php echo $group.'-'.$i ?>" type="radio" name="<?php echo $group; ?>" class="fw-radio" data-id="<?php echo $i; ?>" value="<?php echo $element['value']; ?>" data-api="<?php echo $element['api']; ?>">
                     <label for="<?php echo $group.'-'.$i; ?>" data-labelId="<?php echo $i ?>"><?php echo $element['value']; ?></label>
                 </span>
                 <?php
