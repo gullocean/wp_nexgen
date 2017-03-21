@@ -206,6 +206,21 @@ class Mondula_Form_Wizard_Admin {
                     </td>
                     </tr> -->
                 </table>
+                <h1>API Settings</h1>
+                <table class="form-table">
+                    <tr valign="top">
+                    <th scope="row">wl_leadsource:</th>
+                    <td>
+                      <input type="text" class="fw-wl-leadsource"/>
+                    </td>
+                    </tr>
+                    <tr valign="top">
+                    <th scope="row">lp_Comments:</th>
+                    <td>
+                      <input type="text" class="fw-lp-comments"/>
+                    </td>
+                    </tr>
+                </table>
                 <button class="fw-button-save"><?php _e( 'Save' ) ?></button>
               </div>
             </div>

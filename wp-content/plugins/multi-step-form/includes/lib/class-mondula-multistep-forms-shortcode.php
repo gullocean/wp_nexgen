@@ -144,18 +144,19 @@ class Mondula_Form_Wizard_Shortcode {
 		$data = [];
 		$checkbox_value = [];
 
-		foreach ($form as $value) {
-			$data[$value['api_param']] = $value['value'];
+		foreach ($form as $key => $value) {
+			if (is_numeric($key)) {
+				$data[$value['api_param']] = $value['value'];
 
-			if ($value['api_param'] == 'wl_features') {
-				$checkbox_value['wl_features'][] = $value['value'];
+				if ($value['api_param'] == 'wl_features') {
+					$checkbox_value['wl_features'][] = $value['value'];
+				}
+			} else {
+				$data[$key] = $value;
 			}
 		}
 
 		$data['wl_features'] = implode( " ", $checkbox_value['wl_features'] );
-
-		$source = 5; // number represent "WEB-Nexgen"
-		$data['wl_leadsource'] = $source;
 
 		/*$sql = "INSERT INTO quote_data ( 
 				`contact_name`,
@@ -196,7 +197,6 @@ class Mondula_Form_Wizard_Shortcode {
 		$posting_url .= "&lp_Username=NexgenWeb";
 		$posting_url .= "&lp_Password=pDqEXCN2C35f";
 		// lead data
-
 		foreach ($data as $i => $item) {
 		 	$posting_url .= "&".$i."=".urlencode($item);
 		}
@@ -216,6 +216,16 @@ class Mondula_Form_Wizard_Shortcode {
 		curl_close($curl);
 		die;
     }
+
+	private function nexgen_return_json_msg( $message, $status = 200 ) {
+		header('Content-Type: application/json');
+		$response = new stdClass();
+		$response -> status = $status;
+		$response -> msg = $message;
+		echo json_encode($response);
+		wp_die();
+	}
+
 
     public function fw_send_email () {
         global $phpmailer;
@@ -256,6 +266,9 @@ class Mondula_Form_Wizard_Shortcode {
                 $mail = wp_mail( $settings['to'], $settings['subject'], $content , $headers, $attachments);
 
 				// response from addToLeadmaster forwarding as response to ajax post - need to be positive in order to thank you step to show
+				$data['wl_leadsource'] = $settings['wl_leadsource'];
+				$data['lp_Comments'] = $settings['lp_comment'];
+
 				$response = $this->nexgen_data_handling($data);
 				if( $response === true ){
 					$this->nexgen_return_json_msg( $response, 200 );
